@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    color: white;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#top{
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    background-color: #111;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+#top i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+#top h1{
+    /* height: 15%; */
+    /* width: 100%; */
+    color: rgb(255, 255, 255);
+    /* background-color: #111; */
+    /* text-align: center; */
+}
+
+#main{
+    height: 76.8%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    padding: 3vw 10vw;
+}
+#left{
+    height: 100%;
+    width: 45%;
+    background-color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url(https://newsroompost.com/wp-content/uploads/2023/05/adipurush-5-1.jpg); */
+ /* background-size: cover; */
+}
+#right{
+    height: 100%;
+    width: 55%;
+    padding: 0 3vw;
+    /* background-color: rgb(62, 144, 160); */
+}
+#right h3{
+    font-size: 40px;
+}
+#all-songs{
+    /* background-color: rgb(204, 147, 204); */
+    margin-top: 30px;
+    height: 80%;
+    overflow-y:auto ;
+}
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    border-top: 1px solid rgb(103, 103, 103);
+    padding: 15px 15px;
+    /* margin-top: 15px; */
+}
+.song-card img{
+    height: 55px;
+    width: 55px;
+    margin-right: 20px;
+}
+
+.song-card .part-1{
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    /* font-size: 10px; */
+    /* margin-top: 1rem; */
+}
+.song-card .part-1:active{
+    scale: 0.99;
+}
+.song-card h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.song-card h5{
+    font-weight: 500;
+}
+.song-card:nth-last-child(1){
+    border-bottom: 1px solid rgb(103, 103, 103);
+    /* padding-bottom: 15px; */
+}
+.song-card:hover{
+    cursor: pointer;
+    background-color: #2a2a2a;
+}
+
+
+.timeline {
+    width: 100%;
+    height: 10px;
+    background-color: #696868; /* Background color of the timeline */
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #1db954; /* Color of the progress bar */
+    border-radius: 5px;
+}
+
+
+
+
+#player{
+    background-color: black;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+#player h3{
+    background-color: rgb(43, 43, 43);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#player h3 i{
+    font-size: 22px;   
+}
+#player h3:active{
+    scale: .9;
+}
+#player h3:hover{
+    cursor: pointer;
+}
+
+.active-song {
+    background-color: #1db954; /* Change to desired active color */
+    color: #000; /* Change text color if needed */
+}
