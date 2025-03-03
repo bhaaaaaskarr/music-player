@@ -158,3 +158,12 @@ html, body{
     background-color: #1db954; /* Change to desired active color */
     color: #000; /* Change text color if needed */
 }
+
+
+#random.active {
+    background-color: #28a745; /* Green background when shuffle is active */
+    color: white; /* White text for contrast */
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
